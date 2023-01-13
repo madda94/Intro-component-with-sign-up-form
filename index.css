@@ -1,0 +1,151 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/images/bg-intro-mobile.png');
+    background-color: hsl(0, 100%, 74%);
+}
+
+main {
+    margin: 6em 2em 2em;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+#offer {
+    padding: 1.3em 4em;
+    background-color: hsl(248, 32%, 49%);
+    margin: 3em auto 1.5em;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    box-shadow: 0 10px hsl(0, 58%, 62%);
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    padding: .2em 1.5em;
+    color: hsl(246, 25%, 77%);
+    box-shadow: 0 10px hsl(0, 58%, 62%);
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-top: 1.2em;
+    padding: 1.1em;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    border: 2px solid hsl(240, 12%, 90%);
+    font-weight: 700;
+}
+
+input::placeholder {
+    color: hsl(252, 4%, 49%);
+    font-weight: 700;
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px hsl(154, 48%, 49%);
+    margin-top: 1.2em;
+}
+#last-p {
+    font-size: .8rem;
+    margin: 1.2em auto 2em;
+    padding: 0 1.5em;
+}
+
+span {
+    color: rgb(240, 85, 85);
+    font-weight: 700;
+}
+
+/* Display error */
+.error-div {
+    display: none;
+    position: relative;
+    color: hsl(0, 100%, 74%);
+    text-align: end;
+    margin: 0;
+}
+.error-text {
+    font-style: italic;
+    font-weight: 600;
+    font-size: .7rem;
+    margin: 0;
+}
+.error-icon {
+    position: absolute;
+    top: -45px;
+    right: 20px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 1em auto 2em;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+    body {
+        background-image: url('images/bg-intro-desktop.png');
+    }
+    main {
+        display: flex;
+        align-items: center;
+        margin-top: 2.5em;
+    }
+    #title-div {
+        width: 40%;
+        margin: 0 4em 0 15em;
+        text-align: start;
+        font-size: .5rem;
+    }
+    h1 {
+        font-size: 3rem;
+        margin-right: 2em;
+        line-height: 1.2;
+    }
+    #form-div {
+        width: 60%;
+        padding:  0 6em;
+    }
+    form {
+        padding: 1em 2.5em;
+    }
+    input {
+        padding: 1.1em .9em;
+    }
+    .attribution {
+        margin-top: -4em;
+        margin-left: -35em;
+    }
+}
